@@ -76,7 +76,6 @@ class Scene:
         del binary_mask_
 
     def render_points(self, centroids, volume_shape=(359, 974, 597), size=5, color=(1, 0, 0), opacity=1.0):
-
         mlab.points3d(volume_shape[2] - centroids[:, 0], centroids[:, 1], volume_shape[0] - centroids[:, 2],
                           scale_factor=size,
                           color=color,
