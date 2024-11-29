@@ -1,8 +1,10 @@
 # 3D rendering of microscopy data
 
+Simple Python code to render 3D microscopy data.
+
 All functions are based on the `Mayavi` package and located in `main.py`.
 
-For an example use case, see `script.py`.
+For an example use case, see `script_demo.py`.
 
 # Installation
 
@@ -12,16 +14,16 @@ For an example use case, see `script.py`.
 
 # Linux hack
 
-Mayavi sometimes doesn't work on Linux, especially on Ubuntu 22.04. To repair it, enter the following lines in a terminal:
+Mayavi sometimes doesn't work on Linux, especially on Ubuntu 22.04. To repair it (if there are errors), enter the following lines in a terminal:
 
-$ cd anaconda3/envs/$ENV/lib
-$ mkdir backup  
-$ mv libstd* backup  
-$ cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6  ./
-$ ln -s libstdc++.so.6 libstdc++.so
-$ ln -s libstdc++.so.6 libstdc++.so.6.0.19
+`cd anaconda3/envs/$ENV/lib`
+`mkdir backup`
+`mv libstd* backup`
+`cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6  ./`
+`ln -s libstdc++.so.6 libstdc++.so`
+`ln -s libstdc++.so.6 libstdc++.so.6.0.19`
 
-Here, $ENV corresponds to the name of your virtual environment (for instance, `rendering3d`).
+Here, `$ENV` corresponds to the name of your virtual environment (for instance, `rendering`).
 
 # Author
 
