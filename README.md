@@ -12,6 +12,9 @@ For an example use case, see `script_demo.py`.
 2. Clone this GitHub repository.
 3. Run your own adaptation of the `script.py` file.
 
+Please note that the requirements are rough guidelines. Some installations worked with Python 3.7, others with 3.9, depending on the computer. Package versions may change, and you may want to install from scratch, starting with
+`pip install mayavi`, and working your way up the package list. Mayavi may get version incompatibilities with Numpy (for instance, by installing Numpy >2.0), which will result in binary errors during imports. Numpy 1.26.0 seems to be a good fit for Mayavi, regardless of the version.
+
 # Linux hack
 
 Mayavi sometimes doesn't work on Linux, especially on Ubuntu 22.04. To repair it (if there are errors), enter the following lines in a terminal:
