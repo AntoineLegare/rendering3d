@@ -17,10 +17,15 @@ For an example use case, see `script_demo.py`.
 Mayavi sometimes doesn't work on Linux, especially on Ubuntu 22.04. To repair it (if there are errors), enter the following lines in a terminal:
 
 `cd anaconda3/envs/$ENV/lib`
+
 `mkdir backup`
+
 `mv libstd* backup`
+
 `cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6  ./`
+
 `ln -s libstdc++.so.6 libstdc++.so`
+
 `ln -s libstdc++.so.6 libstdc++.so.6.0.19`
 
 Here, `$ENV` corresponds to the name of your virtual environment (for instance, `rendering`).
